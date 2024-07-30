@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+    <title>Your Name - Gingham Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            /* START: Gingham pattern definition */
+            background-image: linear-gradient(90deg, rgba(255,192,203,.5) 50%, transparent 50%),
+                              linear-gradient(rgba(255,192,203,.5) 50%, transparent 50%);
+            /* IMPORTANT: This is where you control the size of the gingham pattern */
+            /* Adjust the values (currently 20px) to make the pattern larger or smaller */
+            background-size: 30px 30px;
+            /* END: Gingham pattern definition */
+        }
+        /* Rest of the CSS remains unchanged */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        /* nav {
+            background-color: rgba(249, 239, 239, 0.8);
+            max-width: 1240px;
+            margin: 0 auto;
+
+            padding: 8px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 12px;
+        }
+        nav ul li a {
+            color: lightsalmon;
+            text-decoration: none;
+            font-size: 16px;
+        } */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .text-area {
+            flex-basis: 60%;
+            margin-bottom: 16px;
+        }
+        .image-placeholder {
+            flex-basis: 30%;
+            height: 600px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;            
+            /* margin-top: 0px; */
+            padding: 10px;
+            background-color: white;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- HTML content remains unchanged -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon"></div>
+        <div class="hamburger-icon"></div>
+        <div class="hamburger-icon"></div>
+    </div>
+    <!-- <nav class="nav-menu">
+        <ul>
+            <li><a href="#prints">Prints</a></li>
+            <li><a href="#creations">Creations</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> -->
+
+
+    <div>
+        <header>
+            <h1>ariana dideban</h1>
+        </header>
+        <!-- <img src="/Users/seena/Desktop/ariana's site/orange cake002.JPG" class="image-placeholder"> -->
+        
+        <img src="/Users/seena/Desktop/ariana's site/IMG_8634.jpg" class="image-placeholder">
+
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+</html>
